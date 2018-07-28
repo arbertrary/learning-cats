@@ -1,4 +1,4 @@
-package json
+package chapter1.json
 
 sealed trait Json
 
