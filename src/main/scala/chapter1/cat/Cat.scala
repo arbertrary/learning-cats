@@ -19,7 +19,7 @@ object Cat {
     }
   }
 
-  // Exercise 4
+  // Exercise A.4
   implicit val catShow: Show[Cat] = {
     cat =>
       val name = cat.name.show
@@ -28,7 +28,7 @@ object Cat {
       s"$name is a $age year-old $color chapter1.cat."
   }
 
-  //  Exercise 5
+  //  Exercise A.5
   implicit val catEq: Eq[Cat] = Eq.instance({
     (cat1, cat2) =>
       cat1.name === cat2.name &&
